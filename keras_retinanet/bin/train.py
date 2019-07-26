@@ -69,7 +69,7 @@ def get_session():
     return tf.Session(config=config)
 
 
-def model_with_weights(model, weights, skip_mismatch):
+def model_with_weights(model = model_with_weights(backbone_retinanet(num_classes, backbone=backbone, modifier=modifier, anchor_parameters=anchor_parameters), weights, skip_mismatch = True):
     """ Load weights for model.
 
     Args
